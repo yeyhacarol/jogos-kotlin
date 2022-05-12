@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".ProdutosActivity"
+            android:name=".ProdutoSelecionadoActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".ProdutoPesquisadoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ProdutosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
