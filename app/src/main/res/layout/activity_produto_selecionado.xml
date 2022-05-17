@@ -80,14 +80,62 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         app:cardCornerRadius="50dp"
-        android:backgroundTint="#424657">
+        android:backgroundTint="#424657"
+        app:layout_constraintEnd_toStartOf="@+id/v2_vertical"
+        app:layout_constraintTop_toTopOf="@id/v1_horizontal">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
-            android:background="@drawable/back_arrow"/>
+            android:background="@mipmap/ic_launcher_arrow_back" />
     </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gameImg"
+        android:layout_width="373dp"
+        android:layout_height="290dp"
+        app:layout_constraintEnd_toStartOf="@id/v2_vertical"
+        app:layout_constraintStart_toEndOf="@id/v1_vertical"
+        app:layout_constraintTop_toTopOf="@+id/v4_horizontal"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gow_ascension" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titulo_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/v1_vertical"
+        app:layout_constraintTop_toBottomOf="@id/gameImg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/turretroad_extrabold"
+            android:text="God of war: Ascension"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="This prequel to the very first game in the God of War series and the seventh game in the franchise. It is exclusive for the Sony PlayStation 3 console. The game still uses the ancient Greek mythology as visual inspiration and the primary story source."
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/v1_vertical"
+        app:layout_constraintEnd_toEndOf="@id/v2_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_game" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
